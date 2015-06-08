@@ -56,6 +56,7 @@ AGGREGATES_DEFAULT_VARS = [
     'aeeh',
     'asf',
     'aspa',
+    'asi',
     'aah',
     'caah',
     'rsa',
