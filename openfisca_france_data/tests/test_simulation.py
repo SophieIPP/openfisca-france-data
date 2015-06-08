@@ -41,19 +41,26 @@ def test_survey_simulation():
     simulation = survey_scenario.new_simulation(trace = True)
     data_frame_by_entity_key_plural = survey_scenario.create_data_frame_by_entity_key_plural(
         variables = [
+            'aah',
             'aspa',
+            'asi',
+            'asi_elig',
+            'aspa_elig',
+            'caah',
             'aide_logement_montant_brut',
             'idmen',
             'quimen',
             'idfoy',
             'quifoy',
             'idfam',
+            'invalide',
             'quifam',
             'age',
             'activite',
             'br_rmi_i',
             'champm_individus',
-             'pensions_alimentaires_percues',
+            'eligibilite_base',
+            'pensions_alimentaires_percues',
             'salaire_imposable',
             'salaire_net',
             'smic55',
@@ -62,14 +69,15 @@ def test_survey_simulation():
             'af',
             'br_rmi',
             'rsa',
+            'rstbrut',
             'rstnet',
             'weight_familles',
             'revdisp',
             ]
         )
 
-    assert (data_frame_by_entity_key_plural['familles'].weight_familles
-        * data_frame_by_entity_key_plural['familles'].af).sum() / 1e9 > 10
+    assert (data_frame_by_entity_key_plural['familles'].weight_familles *
+        data_frame_by_entity_key_plural['familles'].af).sum() / 1e9 > 10
 
     return data_frame_by_entity_key_plural, simulation
 

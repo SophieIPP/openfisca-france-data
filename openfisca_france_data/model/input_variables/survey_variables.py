@@ -38,13 +38,15 @@ reference_input_variable(
     entity_class = FoyersFiscaux,
     label = u"Identifiant foyer, lien avec l'identifiant dérivé de l'ERF",
     name = "idfoy_original",
-)
+    )
+
 reference_input_variable(
     column = IntCol,
     entity_class = Familles,
     label = u"Identifiant famille, lien avec l'identifiant dérivé de l'ERF",
     name = "idfam_original",
-)
+    )
+
 reference_input_variable(
     column = EnumCol(
         enum = Enum(
@@ -59,8 +61,8 @@ reference_input_variable(
     entity_class = Individus,
     label = u"Statut, pour les agents de l'Etat des collectivités locales, ou des hôpitaux",
     name = "titc",
-    # survey_only = True,
     )
+
 reference_input_variable(
     column = EnumCol(
         enum = Enum(
@@ -84,6 +86,7 @@ reference_input_variable(
     label = u"Statut détaillé mis en cohérence avec la profession",
     name = "statut",
     )
+
 reference_input_variable(
     column = EnumCol(
         enum = Enum(
@@ -101,6 +104,7 @@ reference_input_variable(
     label = u"Taux du temps partiel",
     name = "txtppb",
     )
+
 reference_input_variable(
     column = EnumCol(
         enum = Enum(
@@ -148,6 +152,7 @@ reference_input_variable(
     label = u"Tranche d'unité urbaine",
     name = "tu99",
     )
+
 reference_input_variable(
     column = EnumCol(
         enum = Enum(
@@ -170,6 +175,7 @@ reference_input_variable(
     entity_class = Menages,
     name = "tau99",
     )
+
 reference_input_variable(
     column = EnumCol(
         enum = Enum(
@@ -203,6 +209,7 @@ reference_input_variable(
     entity_class = Menages,
     name = "reg",
     )
+
 reference_input_variable(
     column = EnumCol(
         enum = Enum(
@@ -218,6 +225,7 @@ reference_input_variable(
     entity_class = Menages,
     name = "pol99",
     )
+
 reference_input_variable(
     column = EnumCol(
         enum = Enum(
@@ -238,6 +246,7 @@ reference_input_variable(
     entity_class = Menages,
     name = "cstotpragr",
     )
+
 reference_input_variable(
     column = EnumCol(
         enum = Enum(
@@ -268,6 +277,7 @@ reference_input_variable(
     label = u"activité économique de l'établissement de l'emploi principal actuel de la personne de référence",
     name = "naf16pr",
     )
+
 reference_input_variable(
     column = EnumCol(
         enum = Enum(
