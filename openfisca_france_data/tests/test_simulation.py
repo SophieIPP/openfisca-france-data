@@ -23,9 +23,6 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-import pandas
-
-
 from openfisca_france_data.input_data_builders import get_input_data_frame
 from openfisca_france_data.surveys import SurveyScenario
 
@@ -68,6 +65,9 @@ def test_survey_simulation():
             'af_nbenf',
             'af',
             'br_rmi',
+            'ra_rsa_i',
+            'ra_rsa',
+            'rsa_act',
             'rsa',
             'rstbrut',
             'rstnet',
